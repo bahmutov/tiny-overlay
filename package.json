@@ -29,9 +29,14 @@
   "homepage": "https://github.com/bahmutov/tiny-overlay#readme",
   "config": {
     "pre-git": {
-      "commit-msg": [],
-      "pre-commit": [],
-      "pre-push": [],
+      "commit-msg": ["simple"],
+      "pre-commit": [
+        "npm run lint",
+        "npm run test"
+      ],
+      "pre-push": [
+        "npm run size"
+      ],
       "post-commit": [],
       "post-merge": []
     }
