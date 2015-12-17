@@ -16,9 +16,9 @@ Include `dist/tiny-overlay.js` script
 ```html
 <script src="tiny-overlay.js"></script>
 <script>
-tinyoverlay.show('Hello from tiny overlay')
+tinyOverlay.show('Hello from tiny overlay')
 // timeout (ms) is optional
-tinyoverlay.hide(2000)
+tinyOverlay.hide(2000)
 </script>
 ```
 
