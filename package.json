@@ -4,7 +4,11 @@
   "description": "Full page overlay implemented in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "commit-wizard",
+    "test": "npm run lint",
+    "lint": "standard *.js",
+    "build": "webpack --verbose",
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
   },
   "repository": {
     "type": "git",
@@ -22,5 +26,19 @@
   "bugs": {
     "url": "https://github.com/bahmutov/tiny-overlay/issues"
   },
-  "homepage": "https://github.com/bahmutov/tiny-overlay#readme"
+  "homepage": "https://github.com/bahmutov/tiny-overlay#readme",
+  "config": {
+    "pre-git": {
+      "commit-msg": [],
+      "pre-commit": [],
+      "pre-push": [],
+      "post-commit": [],
+      "post-merge": []
+    }
+  },
+  "devDependencies": {
+    "pre-git": "3.1.1",
+    "standard": "5.4.1",
+    "webpack": "1.12.9"
+  }
 }
