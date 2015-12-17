@@ -7,6 +7,8 @@
 [![semantic-release][semantic-image] ][semantic-url]
 [![manpm](https://img.shields.io/badge/manpm-%E2%9C%93-3399ff.svg)](https://github.com/bahmutov/manpm)
 
+[Demo](http://glebbahmutov.com/tiny-overlay/)
+
 ## Install and use
 
 `npm install tiny-overlay`
